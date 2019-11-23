@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json /app/
 RUN npm i
 COPY ./ /app/
-RUN ng build
+RUN npm run build
 
 # Estagio 2 - Será responsavel por expor a aplicação
 FROM nginx:alpine
